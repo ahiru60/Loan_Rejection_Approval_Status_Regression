@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Machine Learning Web App</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Loan Rejection or Approval Status Regressor</h1>
+        <h2 class="text-center">Enter Features for Prediction</h2>
+        <form action="/predict" method="post" class="mt-4 my-5">
+
+            <div class="form-group">
+                <label for="Credit_History">Credit History:</label>
+                <select name="Credit_History" id="Credit_History" class="form-control">
+                    <option value="1.0">Yes</option>
+                    <option value="0.0">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Married">Married:</label>
+                <select name="Married" id="Married" class="form-control">
+                    <option value="1.0">Yes</option>
+                    <option value="0.0">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Property_Area">Property Area:</label>
+                <select name="Property_Area" id="Property_Area" class="form-control">
+                    <option value="1">Semiurban</option>
+                    <option value="0">Rural</option>
+                    <option value="2">Urban</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="LoanAmount">Loan Amount:</label>
+                <input type="text" name="LoanAmount" id="LoanAmount" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="Gender">Gender:</label>
+                <select name="Gender" id="Gender" class="form-control">
+                    <option value="1.0">Male</option>
+                    <option value="0.0">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="CoapplicantIncome">Coapplicant Income:</label>
+                <input type="text" name="CoapplicantIncome" id="CoapplicantIncome" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="Self_Employed">Self Employed:</label>
+                <select name="Self_Employed" id="Self_Employed" class="form-control">
+                    <option value="1.0">Yes</option>
+                    <option value="0.0">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Dependents">Dependents:</label>
+                <select name="Dependents" id="Dependents" class="form-control">
+                    <option value="3">0</option>
+                    <option value="2">1</option>
+                    <option value="1">2</option>
+                    <option value="0">3+</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Loan_Amount_Term">Loan Amount Term:</label>
+                <select name="Loan_Amount_Term" id="Loan_Amount_Term" class="form-control">
+                    <option value="1.0">480</option>
+                    <option value="0.74358974">360</option>
+                    <option value="0.61538462">300</option>
+                    <option value="0.48717949">240</option>
+                    <option value="0.35897436">180</option>
+                    <option value="0.23076923">120</option>
+                    <option value="0.15384615">84</option>
+                    <option value="0.1025641">60</option>
+                    <option value="0.05128205">36</option>
+                    <option value="0.0">12</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Education">Education:</label>
+                <select name="Education" id="Education" class="form-control">
+                    <option value="0.0">Graduate</option>
+                    <option value="1.0">Not Graduate</option>
+                </select>
+            </div>
+
+            <!-- Add more input fields as needed -->
+            <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
