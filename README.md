@@ -76,11 +76,9 @@ The model used in this project is a pre-trained regression model stored in `Loan
 ## File Structure
 
 - `app.py`: Main Flask application file.
-- `model.py`: Contains the machine learning model (currently not available in the repository).
+- `model.py`: Contains the machine learning model.
 - `templates/index.html`: HTML template for the web interface.
-- `requirements.txt`: Python dependencies (currently not available in the repository).
-- `static/style.css`: CSS for styling (currently not available in the repository).
-- `utils.py`: Utility functions for the application (currently not available in the repository).
+- `requirements.txt`: Python dependencies.
 
 ## Contributing
 
